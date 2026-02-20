@@ -2,13 +2,39 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>ANOR-MATRIX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANOR-MATRIX | Neural Engine</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&family=IBM+Plex+Sans+Arabic:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-blue: #3b82f6;
+            --neon-emerald: #10b981;
+            --deep-bg: #020617;
+        }
+        body {
+            background: var(--deep-bg);
+            font-family: 'Outfit', 'IBM Plex Sans Arabic', sans-serif;
+        }
+        .glass {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .brain-glow {
+            filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.5));
+        }
+    </style>
 </head>
-<body class="bg-black text-white">
-    <div class="text-center p-10">
-        <h1 class="text-4xl">🧠 ANOR-MATRIX</h1>
-        <p class="text-xl">شغال يا حبيب!</p>
+<body class="text-slate-100 min-h-screen flex items-center justify-center">
+    <div class="glass rounded-[2rem] p-10 max-w-2xl text-center brain-glow">
+        <div class="text-8xl mb-6">🧠</div>
+        <h1 class="text-5xl font-black mb-4 bg-gradient-to-l from-blue-500 to-cyan-500 bg-clip-text text-transparent">ANOR-MATRIX</h1>
+        <p class="text-xl text-slate-400 mb-8">Neural Orchestrator 3.0</p>
+        <div class="flex gap-4 justify-center">
+            <div class="px-6 py-3 bg-blue-600/20 rounded-xl border border-blue-500/30 text-blue-400">⚡ جاهز</div>
+            <div class="px-6 py-3 bg-emerald-600/20 rounded-xl border border-emerald-500/30 text-emerald-400">✅ نشط</div>
+        </div>
     </div>
 </body>
 </html>
